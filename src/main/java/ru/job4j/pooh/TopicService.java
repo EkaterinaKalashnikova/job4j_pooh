@@ -5,8 +5,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ConcurrentMap;
 
 public class TopicService implements Service {
-    //хранилище топиков
-    ConcurrentMap<String, ConcurrentHashMap<String, ConcurrentLinkedQueue<String>>> map = new ConcurrentHashMap<>();
+private ConcurrentMap<String, ConcurrentHashMap<String, ConcurrentLinkedQueue<String>>> map = new ConcurrentHashMap<>();
 
     @Override
     public Resp process(Req req) {
